@@ -1,0 +1,18 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">Yoda</string>
+    <!--Navigation Drawer Text-->
+    <string-array name="yoda_samples">
+        <item>I am Yoda!</item>
+        <item>What is the force anyways?</item>
+        <item>This Yoda app is incredible!</item>
+    </string-array>
+    <!--MainActivity Button Text-->
+    <string name="translate_button">Yodify!</string>
+    <!--Action Bar Items-->
+    <string name="action_change_title">Change</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

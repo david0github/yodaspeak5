@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yoda_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.quinnipiac.app.yoda.YodaFragment"
+    android:background="#5cddce">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Hi"
+        android:textSize="50dp" />
+
+</RelativeLayout>
