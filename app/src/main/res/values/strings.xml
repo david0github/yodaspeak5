@@ -17,7 +17,7 @@
     <string name="action_displayFav">Display Favorites</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_favorites_fragment">list of favorites</string>
 
 
 </resources>

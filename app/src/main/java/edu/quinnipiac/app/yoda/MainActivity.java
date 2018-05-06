@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
             case R.id.action_change_title:
                 // User chose the "Settings" item, show the app settings UI...
@@ -97,8 +97,14 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.action_displayFav:
 
-                Toast.makeText(this, "look at favorites!", Toast.LENGTH_LONG).show();
+              // Fragment fragment = new YodaFragment();
+             //   FragmentManager fragmentManager = getFragmentManager();
+             //   FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
+                Toast.makeText(this, "look at favorites!", Toast.LENGTH_LONG).show();
+                ListFragment listFragment = new ListFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,listFragment).commit();
+                drawerLayout.closeDrawers();
                 return true;
 
 

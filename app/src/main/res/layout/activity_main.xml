@@ -25,7 +25,7 @@
             android:text="@string/translate_button"
             android:id="@+id/button"
             android:onClick="onClick"
-            android:layout_gravity="center_horizontal|bottom" />s
+            android:layout_gravity="center_horizontal|bottom" />
 
         <EditText
             android:id="@+id/userInput"
@@ -46,4 +46,5 @@
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp"
         android:background="#BBB"/>
+
 </android.support.v4.widget.DrawerLayout>
