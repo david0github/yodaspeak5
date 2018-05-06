@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView drawerList;
     private final String LOG_TAG = MainActivity.class.getSimpleName();
 
+
     private ShareActionProvider mShareActionProvider;
     Toolbar toolbar;
     FrameLayout FL;
