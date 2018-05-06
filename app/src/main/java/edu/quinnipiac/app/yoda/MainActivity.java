@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_change_title:
                 // User chose the "Settings" item, show the app settings UI...
                 if (!switchedTitle) {
-                    toolbar.setTitle("Whoa");
+                    toolbar.setTitle("Speak");
                     switchedTitle = true;
                     return true;
                 } else {
@@ -85,6 +86,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_share:
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...
+                Toast.makeText(this, "shared!", Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.action_addFav:
+
+                Toast.makeText(this, "add to favorites!", Toast.LENGTH_LONG).show();
+
+                return true;
+
+            case R.id.action_displayFav:
+
+                Toast.makeText(this, "look at favorites!", Toast.LENGTH_LONG).show();
+
                 return true;
 
 

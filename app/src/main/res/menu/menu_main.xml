@@ -18,4 +18,12 @@
         android:title="@string/action_settings"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/action_displayFav"
+        android:title="@string/action_displayFav"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_addFav"
+        android:title="@string/action_addFav"
+        app:showAsAction="never" />
+
 </menu>
