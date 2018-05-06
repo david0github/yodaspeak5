@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.ShareActionProvider;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView drawerList;
     private final String LOG_TAG = MainActivity.class.getSimpleName();
 
+    private ShareActionProvider mShareActionProvider;
     Toolbar toolbar;
     FrameLayout FL;
 
@@ -84,10 +86,16 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             case R.id.action_share:
-                // User chose the "Favorite" action, mark the current item
-                // as a favorite...
-                Toast.makeText(this, "shared!", Toast.LENGTH_LONG).show();
-                return true;
+                Intent i = new Intent(
+                        android.content.Intent.ACTION_SEND);
+                i.setType("text/plain");
+                i.putExtra(
+                        android.content.Intent.EXTRA_TEXT, "My new app https://play.google.com/store/search?q=TECHUBINDIAN"
+                );
+                startActivity(Intent.createChooser(
+                        i,
+                        "Share Via"));
+                break;
 
             case R.id.action_addFav:
 
@@ -118,12 +126,8 @@ public class MainActivity extends AppCompatActivity {
                     switchedTitle = false;
                     return true;
                 }
-
-            default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected(item);
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
